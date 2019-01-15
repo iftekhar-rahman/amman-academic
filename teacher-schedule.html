@@ -277,189 +277,251 @@
 					<span>Lina Kareem</span>
 					<ol class="breadcrumb costum_bread">
 					  	<li><a href="#">Dashboard </a></li>
-					  	<li><a href="#">HomeLearning </a></li>
-					  	<li class="active">Add New HomeLearning</li>
+					  	<li class="active">Schedule</li>
 						<i class="fa fa-long-arrow-left"></i>
 					</ol>
 					<div class="clearfix"></div>
 				</div>
 				<!-- breadcrumb ends -->
 				
-				<h1 class="main_title">Add New Home Learning</h1>
+				<h1 class="main_title">Schedule</h1>
 
-				<!-- form-area starts -->
-				<div class="form-area">
-					<form action="">
-						<div class="form-wrap">
-							<!-- row starts -->
-							<div class="row">
-								<div class="col-lg-6">
-									<!-- form-left-wrap starts -->
-									<div class="form-left-wrap d-flex">
-										<div class="form-left">
-											<label>Title <span>*</span></label>
-										</div>
-										<div class="form-right">
-											<input type="text" placeholder="Type Home Learning Title">
-										</div>
-									</div><!-- form-left-wrap ends -->
-									<!-- form-left-wrap starts -->
-									<div class="form-left-wrap d-flex">
-										<div class="form-left">
-											<label>Published Date <span>*</span></label>
-										</div>
-										<div class="form-right">
-                                            <input class="datepic" data-provide="datepicker" class="date" placeholder="Select Date">
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-								<div class="col-lg-6">
-									<!-- form-left-wrap starts -->
-									<div class="form-right-wrap d-flex">
-										<div class="form-left">
-											<label>Subject <span>*</span></label>
-										</div>
-										<div class="form-right">
-											<select>
-												<option>Choose Subject</option>
-												<option>Subject 1</option>
-												<option>Subject 2</option>
-											</select>
-										</div>
-									</div><!-- form-left-wrap ends -->
-									<!-- form-left-wrap starts -->
-									<div class="form-right-wrap d-flex">
-										<div class="form-left">
-											<label>Due Date <span>*</span></label>
-										</div>
-										<div class="form-right">
-											<select>
-												<option>Select Date</option>
-												<option>Date 1</option>
-												<option>Date 2</option>
-											</select>
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-							</div><!-- row ends -->
-							<!-- row starts -->
-							<div class="row">
-								<div class="col-lg-12">
-									<!-- form-left-wrap starts -->
-									<div class="form-left-wrap fuldwid d-flex">
-										<div class="form-left">
-											<label>To <span>*</span></label>
-										</div>
-										<div class="form-right">
-											<select>
-												<option>Grade</option>
-												<option>Grade 1</option>
-												<option>Grade 2</option>
-											</select>
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-							</div><!-- row ends -->
-							<!-- row starts -->
-							<div class="row">
-								<div class="col-lg-6">
-									<!-- form-left-wrap starts -->
-									<div class="form-left-wrap d-flex">
-										<div class="form-left">
-											<label>Type <span>*</span></label>
-										</div>
-										<div class="form-right">
-											<select>
-												<option>Select Type</option>
-												<option>Type 1</option>
-												<option>Type 2</option>
-											</select>
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-								<div class="col-lg-6">
-									<!-- form-left-wrap starts -->
-									<div class="form-right-wrap d-flex">
-										<div class="form-right fileup">
-											<input type="file" id="real-file" name="file_name" class="upload_file"/>
-											<button type="button" id="custom-button">Choose File</button>
-											<span class="custom-txt">No file chosen, yet.</span>
-											<label class="file_close" ><i class="fa fa-close"></i></label>
-											
-											<script>
-												const realFileBtn = document.getElementById("real-file");
-												const customBtn = document.getElementById("custom-button");
-												const customTxt = document.getElementById("custom-txt");
-
-												customBtn.addEventListener("click", function() {
-													realFileBtn.click();
-												});
-
-												realFileBtn.addEventListener("change", function(){
-													if(realFileBtn.value){
-														customTxt.innerHTML = realFileBtn.value;
-													} else{
-														customTxt.innerHTML = "No file chosen, yet.";
-													}
-												});
-											</script>
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-							</div><!-- row ends -->
-							<!-- row starts -->
-							<div class="row">
-								<div class="col-lg-12">
-									<!-- form-left-wrap starts -->
-									<div class="form-left-wrap fuldwid d-flex">
-										<div class="form-left">
-											<label>Description</label>
-										</div>
-										<div class="form-right">
-											<textarea name="" id="" cols="30" rows="10" placeholder="Type Description..."></textarea>
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-							</div><!-- row ends -->
-							<!-- row starts -->
-							<div class="row">
-								<div class="col-lg-12">
-									<!-- form-left-wrap starts -->
-									<div class="form-left-wrap d-flex">
-										<div class="form-left">
-											
-										</div>
-										<div class="form-right">
-											<div class="single-grade radio">
-												<label for="grade6">Grade 6</label>
-												<input type="radio" name="grade" id="grade6">
-											</div>
-											<div class="single-grade radio">
-												<label for="grade7">Grade 7</label>
-												<input type="radio" name="grade" id="grade7">
-											</div>
-											<div class="single-grade radio">
-												<label for="grade8">Grade 8</label>
-												<input type="radio" name="grade" id="grade8">
-											</div>
-										</div>
-									</div><!-- form-left-wrap ends -->
-								</div><!-- col ends -->
-							</div><!-- row ends -->
-						</div>
-						<!-- row starts -->
-						<div class="row">
-							<div class="col-lg-12">
-								<!-- form-left-wrap starts -->
-								<div class="form-left-wrap buuton_div">
-									<button class="Cancel" type="button"><i class="fa fa-close"></i> Cancel</button>
-									<button class="save" type="button"><i class="fa fa-floppy-o"></i> Save</button>
-								</div><!-- form-left-wrap ends -->
-							</div><!-- col ends -->
-						</div><!-- row ends -->
-					</form>
+				<!-- schedule-area starts -->
+				<div class="schedule-area">
+					<ul>
+						<li>
+							<div class="schedule-column">
+								<div class="schedule-row day-title">
+									<div class="d-table-cell">
+										<span class="session">Session</span>
+										<span class="day">Day</span>
+									</div>
+								</div>
+								<div class="schedule-row day">
+									<div class="d-table-cell">
+										<span>Sunday</span>
+									</div>
+								</div>
+								<div class="schedule-row day">
+									<div class="d-table-cell">
+										<span>Monday</span>
+									</div>
+								</div>
+								<div class="schedule-row day">
+									<div class="d-table-cell">
+										<span>Tuesday</span>
+									</div>
+								</div>
+								<div class="schedule-row day">
+									<div class="d-table-cell">
+										<span>Wednesday</span>
+									</div>
+								</div>
+								<div class="schedule-row day">
+									<div class="d-table-cell">
+										<span>Thursday</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="schedule-column 1stsession">
+								<div class="schedule-row row-head">
+									<div class="d-table-cell">
+										<span>1st Session</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>7-A</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>6-C</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="schedule-column 2ndsession">
+								<div class="schedule-row row-head">
+									<div class="d-table-cell">
+										<span>2nd Session</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>8-A</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>8-D</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>6-E</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="schedule-column 3rdsession">
+								<div class="schedule-row row-head">
+									<div class="d-table-cell">
+										<span>3rd Session</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>6-D</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>7-B</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="schedule-column 4thsession">
+								<div class="schedule-row row-head">
+									<div class="d-table-cell">
+										<span>4th Session</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>6-F</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>7-B</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="schedule-column 5thsession">
+								<div class="schedule-row row-head">
+									<div class="d-table-cell">
+										<span>5th Session</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>7-K</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>7-C</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+										<span>8-D</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="schedule-column 6thsession">
+								<div class="schedule-row row-head">
+									<div class="d-table-cell">
+										<span>6th Session</span>
+									</div>
+								</div>
+								<div class="schedule-row">
+									<div class="d-table-cell">
+										<img src="img/arabic-word.png" alt="">
+										<p>Arabic LL &amp; Arabic LA</p>
+									</div>
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+								<div class="schedule-row">
+									
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
-				<!-- form-area ends -->
+				<!-- schedule-area ends -->
 
 				
 		  
@@ -526,11 +588,7 @@
 	   
 	    <script type="text/javascript">
         $(document).ready(function () {
-            $('.date').datepicker();
 
-            $(".file_close").on("click", function() {
-                $(".upload_file").val("")
-            })
             var barData = {
 		
                 labels: ["Yellow Brighter", "Green Home", "House World", "Sport Spiders"],
