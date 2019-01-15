@@ -1,0 +1,552 @@
+
+@media only screen and (min-width:1920px) {
+}
+
+@media only screen and (min-width:1600px) and (max-width:1900px) {
+}
+
+@media only screen and (min-width:1300px) and (max-width:1440px) {
+.c_box .ibox-content label {
+	width: 30%;
+}
+.c_box .form-control, .c_box .date, .dp_div, .c_box .fileinput {
+	width: 70%;
+}
+.c_box .i-checks label {
+	width: auto;
+}
+.c_box .full_width_textarea label {
+	width: 8%;
+}
+.c_box .custom_12_textarea textarea {
+	width: 90.5%;
+}
+.c_box .full_12_radio > label {
+	width: 10%;
+}
+.c_box .full_width_6 > label {
+	width: 15%;
+}
+.c_box .full_width_6 .form-control {
+	width: 80.5%;
+}
+.pi_box .pi_box_desc {
+	padding: 15px 10px 0;
+}
+.full_12_radio {
+	width: 100%;
+}
+.c_box .full_12_radio label {
+	font-size: 12px;
+	margin: 0;
+}
+.c_box .i-checks {
+	margin-right: 6px;
+}
+.pi_box > img {
+	width: 70px;
+	height: 70px;
+	margin-top: 11px;
+}
+	.nav_sticky { 
+    width: 83.7%;
+}
+	/*------------------------------------- LOGIN PAGE ----------------------------------------------*/
+	.login_form {
+    padding: 50px;
+    width: 80%;
+}
+	.lapy_div { 
+    margin-top: 50px;
+}
+	#lapy_owl.owl-carousel .owl-item span { 
+    margin-top: 100px;
+}
+.teacher_list li,.teacher_list li:nth-child(5n)  {
+    width: 16%; 
+    margin-right: 12%; 
+} 
+	.teacher_list li:nth-child(4n) {
+    margin-right: 0;
+}
+.filter_link li { 
+    padding-right: 1.2%;
+    margin-right: 1.1%;
+}
+.filter_box li { 
+    width: 15%;
+    margin-right: 6%; 
+}
+.filter_box li:nth-child(6n) {
+    width: 15%;
+    margin-right: 6%; 
+}
+.filter_box li:nth-child(5n) {
+    margin-right: 0;
+}
+.c_box .ibox-content .filter_div label { 
+    width: 10%;
+}
+.filter_box li strong { 
+    height: 50px;
+    overflow: hidden;
+}
+	.four_boxes  .ac_box img{
+		float: left;
+	}
+	.four_boxes  .ac_box p {
+    color: #006baa;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 70px;
+}
+/*------------------------------------------ DASHBOARD ---------------------------------------------------*/
+	#barChart{
+		height: 317px !important;
+	}
+	.canvas_div strong { 
+        font-size: 30px;
+    right: 27%;
+    top: 34%;
+    line-height: 26px;
+}
+	.canvas_div strong span{
+		    font-size: 17px;
+	}
+	
+.sidebar-collapse {
+	height: auto;
+}
+	
+	
+}
+
+@media only screen and (max-width:1440px) {
+	.c_box .full_width_textarea textarea { 
+    width: 85.5%;
+}
+.c_box .custom_12_textarea textarea {
+    width: 90.5%;
+}
+	
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+	.c_box .ibox-content label, .c_box .form-control, .c_box .date, .dp_div, .c_box .fileinput, .c_box .full_width_textarea textarea{
+		width: 100%;
+	}
+	.c_box .full_12_radio > label{
+		width: 20%;
+	}
+	.c_box .form-group{
+		margin: 0;
+	}
+	.col_6{
+		width: 100%;
+	}
+	.c_box .form-group {
+    margin: 15px 0;
+}
+	.pi_box .pi_box_desc {
+    min-height: inherit;
+    padding: 15px 35% 0 0;
+}
+	.pi_box {
+    margin: 20px 0 0; 
+		border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+}
+	
+	.pi_box::after{
+		display: none;
+	}
+	.nav_sticky { 
+    width: 78.2%;
+}
+/*---------------------------------------------------------------------------------*/
+	.login_div ul {
+    margin: 10% 5% 0 5%; 
+}
+	.login_form {
+    padding: 50px;
+    width: 100%;
+}
+	.lapy_div { 
+    margin-top: 80px;
+}
+	#lapy_owl.owl-carousel .owl-item span { 
+    margin-top: 90px;
+}
+	.teacher_list li,.teacher_list li:nth-child(5n)  {
+    width: 25%; 
+    margin-right: 12.5%; 
+} 
+	.teacher_list li:nth-child(3n) {
+    margin-right: 0;
+}
+	.table_div .table {
+		width: 1000px;
+	}
+	.table_div .dataTables_wrapper .row:last-child { 
+    position: absolute;
+    bottom: -50px; 
+       left: 15px;
+    right: 15px;
+}
+.c_box  .five_title {
+    margin-bottom: 0;
+}
+.c_box .five_tbl  .button-align { 
+    padding-right: 0;
+}
+.c_box .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle), .c_box .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .c_box .btn-group>.btn:last-child:not(:first-child), .c_box .btn-group>.dropdown-toggle:not(:first-child) {
+    margin-left: 5px;
+}
+.five_boxes li {
+    width: 50%; 
+}
+.filter_box li {
+    width: 20%;
+    margin-right: 5%;
+}
+.filter_box li:nth-child(6n),.filter_box li:nth-child(5n)  {
+     width: 20%;
+    margin-right: 5%;
+}
+.filter_box li:nth-child(4n) {
+    margin-right: 0;
+}
+.filter_link {
+    float: none;
+    width: 100%;
+}
+
+.navbar-top-links li:last-child {
+	margin-right: 15px;
+}
+.user_profile b.fa.fa-angle-down {
+	margin-left: 15px;
+}
+.edit_action,
+.delete_action{
+	font-size: 13px;
+	margin: 0 6px;
+}	
+.chechkbox_ul li {
+	width: 100%;
+}
+	.chechkbox_ul2 li{
+		width: 50%;
+	}
+	
+}
+
+@media screen and (max-width: 992px) {
+
+	.pi_box .pi_box_desc { 
+    padding: 15px;
+} 
+	.pi_box {
+    margin: 40px 0 0; 
+}
+	.pi_box_last{
+		border: none;
+	}
+	/*---------------------------------------------------------------------------------*/
+	.login_div li {
+    float: none;
+    width: 100%;
+}
+	.login_div { 
+    height: 100%;
+}
+	.login_div::after { 
+    top: auto;
+    bottom: -46%;
+    height: 100%;
+    width: 176%; 
+    -moz-transform: skewX(-69deg);
+    -webkit-transform: skewX(-69deg);
+    transform: skewX(-69deg);
+}
+	.login_div ul {
+    margin: 10% 5% 20% 5%;
+}
+	.lapy_div {
+    margin-top: 20px;
+}
+	.login_form { 
+    border-bottom: 1px solid #ddd;
+}
+	.footer_btn_div { 
+    text-align: center;
+}
+		body.mini-navbar .nav-header { 
+    background-color: transparent;
+}
+		body.mini-navbar.fixed-sidebar .nav-header {
+    padding: 33px 25px 0;
+}
+		.profile-element > span {
+    float: none;
+}
+	.mini-navbar .nav .nav-second-level{
+		    background-color: transparent;
+	}
+	.c_box .five_tbl .dataTables_filter{
+	margin-bottom: 20px;
+}
+.c_box .five_title {
+    margin-bottom: -50px;
+}
+
+.filter_search select,
+.filter_search input{
+	margin-bottom: 10px;
+}
+.list_table thead,
+.list_table tbody{
+	font-size: 12px;
+}
+	
+	
+	
+}
+
+
+@media screen and (max-width: 767px) {
+	.navbar .dropdown-menu { 
+    left: auto;
+    right: 0;
+}
+	.c_box .full_12_radio > label {
+    width: 100%;
+}
+
+body.body-small.fixed-sidebar.mini-navbar #page-wrapper {
+    margin: 0;
+	-moz-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+	.metismenu{
+	opacity: 1 !important;
+		-moz-transition: all 0ms ease-in-out;
+	-webkit-transition: all 0ms ease-in-out;
+	transition: all 0ms ease-in-out;
+	}
+	body.fixed-nav.fixed-nav-basic #wrapper .navbar-static-side { 
+	background:#006baa;
+		top: 60px;
+}
+	body.fixed-nav.fixed-nav-basic.fixed-sidebar.mini-navbar.body-small .navbar-fixed-top {
+    left: 0;
+}
+
+
+	/*------------------------------------- LOGIN PAGE ----------------------------------------------*/
+	.login_div ul {
+    margin: 5% 5% 20% 5%;
+}
+	.teacher_list li, .teacher_list li:nth-child(3n), .teacher_list li:nth-child(4n), .teacher_list li:nth-child(5n) {
+    width: 100%; 
+		margin: 0;
+    margin-bottom: 20px;
+}
+	.table-responsive{
+		border: none;
+	}
+	.table_div { 
+    padding: 0 15px;
+}
+	.table_div .dataTables_wrapper .row:last-child { 
+        padding: 0;
+}
+.five_boxes li {
+    width: 100%;
+}
+.c_box .five_title {
+    margin-bottom: 0;
+}
+.c_box .five_tbl .dataTables_filter, .c_box .five_tbl .button-align {
+    display: block;
+    margin-top: 20px;
+}
+.c_box  div.dataTables_filter input.searchBox{
+	width: 100%;
+}
+.c_box .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle), .c_box .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .c_box .btn-group>.btn:last-child:not(:first-child), .c_box .btn-group>.dropdown-toggle:not(:first-child) {
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.filter_box li {
+    width: 45%;
+    margin-right: 10%;
+}
+.filter_box li:nth-child(6n),.filter_box li:nth-child(5n),.filter_box li:nth-child(4n)   {
+    width: 45%;
+    margin-right: 10%;
+}
+.filter_box li:nth-child(2n) {
+    margin-right: 0;
+}
+/*------------------------------------------ USER PROFILE CSS ---------------------------------------------------*/
+.basic_info_ul li { 
+    width: 50%;
+}
+	
+.nav.navbar-top-links.navbar-right {
+	float: right;
+}
+.aa_logo {
+	text-align: right;
+	margin-top: 20px;
+	padding-right:15px;
+}	
+.wrapper-content {
+	margin-top: 60px;
+}
+.chechkbox_ul2 li{
+		width: 100%;
+	}
+	.login_box_div {
+	padding: 15px 50px;
+	width: 90%;
+}
+.back_to_login {
+	margin-top: 15px;
+}
+.login_box_div{
+	min-height:inherit;
+}		
+	
+}
+
+@media screen and (max-width: 580px) {
+.login_box_div form {
+	margin: 0;
+}
+.login_box_div .form-group {
+	margin-bottom: 10px;
+}
+.login_box_div button {
+	margin-top: 10px;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+	.title_div h2 { 
+		text-align: center;
+		display: block;
+    margin: 10px 0 10px; 
+}
+	.c_box .ibox-title .heading_div{
+		margin: 0;
+	}
+	
+	.c_box .i-checks{
+		margin-bottom: 15px;
+	}
+	.pi_box > img{
+		display: block;
+		float: none;
+		margin: auto;
+	}
+	.pi_box .pi_box_desc {
+    padding: 15px;
+    text-align: center;
+}
+	.c_box .form-group {
+    margin: 15px 0;
+}
+	.c_box .i-checks { 
+    display: block;
+}
+	.pi_box .pi_box_desc a {
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+	.footer_btn_div { 
+    text-align: center;
+}
+	/*------------------------------------- LOGIN PAGE ----------------------------------------------*/
+.login_form {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+	.login_form form {
+    margin-top: 30px;
+}
+	.login_form .forgot_link { 
+    margin-bottom: 20px; 
+}
+	#lapy_owl.owl-carousel .owl-item span {
+    margin-top: 50px;
+}
+	.login_div ul {
+    margin: 5% 5% 40% 5%;
+}
+	.login_div::after { 
+    width: 260%; 
+}
+	.custom_modal_design {
+		padding: 0 !important;
+	}
+	.custom_modal_design .modal-dialog{
+		width: 100%;
+	}
+	.filter_box li {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+.filter_box li:nth-child(6n),.filter_box li:nth-child(5n),.filter_box li:nth-child(4n)   {
+    width: 100%;
+    margin-right: 0;
+}
+.filter_box li:nth-child(2n) {
+    margin-right: 0;
+}
+/*------------------------------------------ USER PROFILE CSS ---------------------------------------------------*/
+.basic_info_ul li, .star_li li { 
+    width: 100%;
+}
+.c_box .ibox-title .heading_div{
+	margin-bottom: 30px;
+}
+.wrapper-content {
+	margin-top: 20px;
+}
+.costum_bread {
+	float: none;
+	margin: 15px 0;
+}	
+.login_box_div {
+	padding: 15px;
+	width: 90%;
+}	
+	
+	
+	
+	
+
+}
+
+@media screen and (max-width: 320px) {
+	.custom_breadcrumb { 
+    padding: 10px; 
+    font-size: 12px; 
+}
+		#lapy_owl .owl-dots { 
+    margin-top: 15px; 
+}
+}

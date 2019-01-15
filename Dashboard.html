@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+      <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+      <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+      <link href="css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+      <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+      <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+      <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+      <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+      <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+      <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+      <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+      <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+      <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+      <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+      <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+      <link href="css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+      <link href="css/plugins/dualListbox/bootstrap-duallistbox.min.css" rel="stylesheet">
+	   <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/designer.css" rel="stylesheet">
+      <!--<link href="css/teacher_list_css.css" rel="stylesheet">-->
+      <link href="css/responsive.css" rel="stylesheet">
+   </head>
+   <body>
+		<!-- wrapper starts -->
+      <div id="wrapper">
+			<!-- navbar starts -->
+         <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+					<!-- .nav starts -->
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header">
+                     <a href="form_basic.html" class="logo"><img alt="" src="img/logo.png" class="img-responsive" /></a>
+                     <div class="dropdown profile-element">
+                        <span>
+                        <img alt="image" class="img-circle" src="img/user-profile.png" />
+                        </span>
+						 <span>Lina Kareem</span> 
+						 <small>Teacher</small>
+                        <!--<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> 
+                        
+                        </span> 
+                        </a>-->
+                        <!--<ul class="dropdown-menu m-t-xs">
+                           <li><a href="profile.html">Profile</a></li>
+                           <li><a href="contacts.html">Contacts</a></li>
+                           <li><a href="mailbox.html">Mailbox</a></li>
+                           <li class="divider"></li>
+                           <li><a href="login.html">Logout</a></li>
+                        </ul>-->
+                     </div>
+                     <div class="logo-element">
+                        IN+
+                     </div>
+                     <div class="clearfix"></div>
+                  </li>
+                  <li class="active">
+                     <a href="javascript:void(0)" class="s_m_1">
+						 <span class="nav-label">Dashboard</span>
+					  </a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="s_m_2">
+						 <span class="nav-label">Home Learning</span>
+					  </a>
+                     <!--<ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">All Students</a></li>
+                        <li class="active"><a href="dashboard_2.html">Add Studnets</a></li>
+                     </ul>-->
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="s_m_3">
+						 <span class="nav-label">worksheets</span>
+					  </a>
+                     <!--<ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">All Teachers</a></li>
+                        <li><a href="dashboard_2.html">Add Teachers</a></li>
+                     </ul>-->
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="s_m_4">
+						 <span class="nav-label">Behavior</span>
+					  </a>
+                     <!--<ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">All Parents</a></li>
+                        <li><a href="dashboard_2.html">Add Parents</a></li>
+                     </ul>-->
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="s_m_5">
+						 <span class="nav-label">Academic Negligence</span>
+					  </a>
+                     <!--<ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">All Classes</a></li>
+                        <li class="active"><a href="dashboard_2.html">Add Classes</a></li>
+                     </ul>-->
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="s_m_6">
+						 <span class="nav-label">Announcements</span>
+					  </a>
+                     <!--<ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">All Teachers</a></li>
+                        <li><a href="index.html">Add Teacher</a></li>
+                        <li class="active"><a href="dashboard_2.html">Add Teachers</a></li>
+                     </ul>-->
+                  </li>
+					</ul>
+					<!-- .nav ends -->
+					
+					<hr>
+					
+					<!-- carousel starts  -->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<h4 class="small_title">School News</h4>
+						<!-- carousel-indicators starts -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol><!-- carousel-indicators ends -->
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<!-- carousel-item starts -->
+							<div class="item active">
+								<img src="img/1.jpg" alt="...">
+								<div class="carousel-caption">
+								<p>Sahab Al Khadra won 1 gold, 2 silver, and 2 bronze medals</p>
+								<span><i class="fa fa-calendar"></i> 04/12/2018</span>
+								</div>
+							</div><!-- carousel-item ends -->
+							<!-- carousel-item starts -->
+							<div class="item">
+								<img src="img/1.jpg" alt="...">
+								<div class="carousel-caption">
+								<p>Sahab Al Khadra won 1 gold, 2 silver, and 2 bronze medals</p>
+								<span><i class="fa fa-calendar"></i> 04/12/2018</span>
+								</div>
+							</div><!-- carousel-item ends -->
+							<!-- carousel-item starts -->
+							<div class="item">
+								<img src="img/1.jpg" alt="...">
+								<div class="carousel-caption">
+								<p>Sahab Al Khadra won 1 gold, 2 silver, and 2 bronze medals</p>
+								<span><i class="fa fa-calendar"></i> 04/12/2018</span>
+								</div>
+							</div><!-- carousel-item ends -->
+						</div>
+					</div>
+					<!-- carousel ends  -->
+            </div>
+			</nav>
+			<!-- navbar ends -->
+		  
+		  	<!-- page-wrapper starts -->
+         <div id="page-wrapper" class="">
+            <div class="row">
+					<!-- navbar starts -->
+               <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+								<div class="navbar-header custom_navbar_header">
+									<a class="navbar-minimalize minimalize-styl-2 btn navbar_toggle" href="#"> 
+										<!--<img alt="" src="img/menu_bar.png" /> -->
+										<i class="fa fa-bars"></i> Menu
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-4  col-xs-8">
+								<!-- aa_logo starts -->
+								<div class="aa_logo">
+									<a href="javascript:void(0)"><img src="img/A.png" alt=""/></a>
+								</div><!-- aa_logo ends -->
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-4  col-xs-12">
+								<!-- navbar starts -->
+								<ul class="nav navbar-top-links navbar-right">
+										<!-- dropdown starts -->
+										<li class="dropdown">
+											<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+											<i class="fa fa-bell"></i>  <!--<span class="label label-warning">8</span>-->
+											</a>
+										<ul class="dropdown-menu dropdown-alerts">
+											<li>
+												<a href="mailbox.html">
+													<div>
+														<i class="fa fa-envelope fa-fw"></i> You have 16 messages
+														<span class="pull-right text-muted small">4 minutes ago</span>
+													</div>
+												</a>
+											</li><!-- li ends -->
+											<li class="divider"></li>
+											<li>
+												<a href="profile.html">
+													<div>
+														<i class="fa fa-twitter fa-fw"></i> 3 New Followers
+														<span class="pull-right text-muted small">12 minutes ago</span>
+													</div>
+												</a>
+											</li><!-- li ends -->
+											<li class="divider"></li>
+											<li>
+												<a href="grid_options.html">
+													<div>
+														<i class="fa fa-upload fa-fw"></i> Server Rebooted
+														<span class="pull-right text-muted small">4 minutes ago</span>
+													</div>
+												</a>
+											</li><!-- li ends -->
+											<li class="divider"></li>
+											<li>
+												<div class="text-center link-block">
+													<a href="notifications.html">
+													<strong>See All Alerts</strong>
+													<i class="fa fa-angle-right"></i>
+													</a>
+												</div>
+											</li><!-- li ends -->
+										</ul>
+									</li><!-- dropdown ends -->
+									
+									<li class="dropdown user_top_action">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+										<span class="clear"> 
+										<span class="user_profile">
+									<!--<i class="fa fa-user" aria-hidden="true"></i>-->
+									<img src="img/user-profile.png" alt=""/> Lina Kareem
+									<b class="fa fa-angle-down"></b></span> 
+										</span> 
+										</a>
+										<ul class="dropdown-menu m-t-xs">
+											<li><a href="profile.html">Profile</a></li>
+											<li><a href="contacts.html">Contacts</a></li>
+											<li><a href="mailbox.html">Mailbox</a></li>
+											<li class="divider"></li>
+											<li><a href="login.html">Logout</a></li>
+										</ul>
+									</li>
+								</ul><!-- navbar ends -->
+							</div>
+						</div>
+               </nav><!-- navbar ends -->
+				</div>
+				<!-- wrapper starts -->
+            <div class="row wrapper white-bg title_div">
+               <div class="col-lg-12">
+                  <h2><img alt="" src="img/ti7.png" /> <strong>Dashboard</strong></h2>
+                  <ol class="breadcrumb custom_breadcrumb">
+                     <li>
+                        <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                     </li>
+                     <li>
+                        <a>Students  </a>
+                     </li>
+                     <li class="active">
+                        Dashboard
+                     </li>
+                  </ol>
+               </div>
+               <div class="col-lg-2">
+               </div>
+            </div><!-- wrapper ends -->
+            <div class="wrapper wrapper-content animated fadeInRight">
+				
+				<!-- breadcrumb starts -->
+				<div class="divone">
+					<span>Lina Kareem</span>
+					<ol class="breadcrumb costum_bread">
+					  	<li><a href="#">Dashboard </a></li>
+					  	<li><a href="#">HomeLearning </a></li>
+					  	<li class="active">Add New HomeLearning</li>
+						<i class="fa fa-long-arrow-left"></i>
+					</ol>
+					<div class="clearfix"></div>
+				</div>
+				<!-- breadcrumb ends -->
+				
+				<h1 class="main_title">Add New Home Learning</h1>
+				
+				<!-- filter_search starts -->
+				<div class="filter_search">	
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-4">
+							<input type="text" placeholder="Search By Student Name"/>
+						</div><!-- .col ends -->
+						<div class="col-lg-2 col-md-2 col-sm-4">
+							<select>
+								<option>Search by Homeroom</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div><!-- .col ends -->
+						<div class="col-lg-2 col-md-2 col-sm-4">
+							<input type="text" placeholder="Search by Teacher"/>
+						</div><!-- .col ends -->
+						<div class="col-lg-2 col-md-2 col-sm-4">
+							<select>
+								<option>Search by Status</option>
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div><!-- .col ends -->
+						<div class="col-lg-1 col-md-1 col-sm-1">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div><!-- .col ends -->
+						<div class="col-lg-3 col-md-3 col-sm-7">
+							<div class="add_remove_div">
+								<a href="javascript:void(0)" class="add">
+									<i class="fa fa-plus"></i> Add New
+								</a>
+								<a href="javascript:void(0)" class="remove">
+									<i class="fa fa-trash"></i>
+								</a>
+							</div>
+						</div><!-- .col ends -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- filter_search ends -->
+				
+				<!-- table-responsive starts -->
+				<div class="table-responsive">
+					<table class="table table-striped list_table">
+						<!-- .table-thead starts -->
+						<thead>
+							<tr>
+
+								<th><input type="checkbox"/></th>
+								<th>Student Name </th>
+								<th>Homeroom</th>
+								<th>Teacher Name</th>
+								<th>Home Learning Title</th>
+								<th>Behavior</th>
+								<th>Status</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<!-- .table-thead ends -->
+						<tbody> 
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-exclamation"></i> Pending</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+							<!-- tr starts -->
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td>Zain Al-Abdullah Al-Ahmad</td>
+								<td>7-B</td>
+								<td>Zain Al-Abdullah</td>
+								<td>Assignment #4</td>
+								<td>did’nt handover thes...</td>
+								<td><i class="fa fa-check-circle-o"></i> Approved</td>
+								<td>
+									<a href="javascript:void(0)"><i class="fa fa-pencil edit_action"></i></a>
+									<a href="javascript:void(0)"><i class="fa fa-trash delete_action"></i></a>
+								</td>
+							</tr><!-- tr ends -->
+						</tbody>
+					 </table>
+				</div>
+				<!-- table-responsive starts -->
+
+				<!-- pagination starts -->
+				<div class="pagi">
+					<span>Results from 1 to 13</span>
+					<ul class="pagination">
+						<li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">/&nbsp; 5</a></li>
+						<li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div><!-- pagination ends --> 
+			</div>
+			<!-- page-wrapper ends -->
+		  
+		<!-- Link Model mmmmmmmmmmm-->
+		<!-- <div class="modal fade custom_modal_design" id="AddClassModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog  modal-dialog-centered">
+				<div class="modal-content"> 
+						<div class="modal-body">
+							<form>
+							<div class="model_icon">
+								<img alt="" src="img/model_ic.png" />
+							</div>
+							<h1>Assign to a New Class</h1>
+							
+							<div class="c_box"> 
+								<form class="ibox-content">
+									
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="form-group"> 
+												<select class="form-control" name="account">
+													<option>Choose Blood Group</option>
+													<option>option 2</option>
+													<option>option 3</option>
+													<option>option 4</option>
+												</select>
+											</div>
+											<div class="form-group"> 
+												<select class="form-control" name="account">
+													<option>Choose Grade</option>
+													<option>option 2</option>
+													<option>option 3</option>
+													<option>option 4</option>
+												</select>
+											</div>
+											<div class="form-group"> 
+												<select class="form-control" name="account">
+													<option>Choose Subject</option>
+													<option>option 2</option>
+													<option>option 3</option>
+													<option>option 4</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									
+								</form>
+							</div>
+							
+							
+						</form>
+						</div>
+						<div class="footer_btn_div">
+							<button type="button" data-dismiss="modal" class="btn btn-default cancel_btn"> 
+								Cancel
+							</button>
+							<button type="button" id="btnDocLink"  class="btn btn-primary submt_btn "> 
+								Save
+							</button>
+						</div>
+				</div>
+			</div>
+		</div> -->
+		  
+		</div>
+		<!-- wrapper ends -->
+      <!-- Mainly scripts -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+	   
+	   <!-- Required for chart -->
+	 <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	   
+      <!-- Custom and plugin javascript -->
+      <script src="js/inspinia.js"></script>
+      <script src="js/plugins/pace/pace.min.js"></script>
+	   
+	       <!-- ChartJS-->
+
+
+      <!-- Chosen -->
+      <script src="js/plugins/chosen/chosen.jquery.js"></script>
+      <!-- JSKnob -->
+      <script src="js/plugins/jsKnob/jquery.knob.js"></script>
+      <!-- Input Mask-->
+      <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+      <!-- Data picker -->
+      <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+      <!-- NouSlider -->
+      <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
+      <!-- Switchery -->
+      <script src="js/plugins/switchery/switchery.js"></script>
+      <!-- IonRangeSlider -->
+      <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+      <!-- iCheck -->
+      <script src="js/plugins/iCheck/icheck.min.js"></script>
+      <!-- MENU -->
+      <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <!-- Color picker -->
+      <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+      <!-- Clock picker -->
+      <script src="js/plugins/clockpicker/clockpicker.js"></script>
+      <!-- Image cropper -->
+      <script src="js/plugins/cropper/cropper.min.js"></script>
+      <!-- Date range use moment.js same as full calendar plugin -->
+      <script src="js/plugins/fullcalendar/moment.min.js"></script>
+      <!-- Date range picker -->
+      <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
+      <!-- Select2 -->
+      <script src="js/plugins/select2/select2.full.min.js"></script>
+      <!-- TouchSpin -->
+      <script src="js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+      <!-- Tags Input -->
+      <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+      <!-- Dual Listbox -->
+      <script src="js/plugins/dualListbox/jquery.bootstrap-duallistbox.js"></script>
+	   
+	  <script src="js/plugins/dataTables/datatables.min.js"></script>
+	  		   
+	  <script src="js/plugins/chartJs/Chart.min.js"></script>
+	   
+	    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var barData = {
+		
+                labels: ["Yellow Brighter", "Green Home", "House World", "Sport Spiders"],
+                datasets: [
+                      {
+                        label: "house",
+                        backgroundColor: 'rgba(25,207,162,1)',
+                        borderColor: "rgba(25,207,162,1)",
+                        pointBackgroundColor: "rgba(25,207,162,1)",
+                        pointBorderColor: "#fff",
+                        data: [218, 448, 1040, 19],
+						//strokeColor: "#000"
+                    }
+                ]
+				
+            };
+
+			
+            var barOptions = {
+				legend: {
+						display: false // hide chart title
+					},
+				responsive: true,
+				maintainAspectRatio: false,
+				showDatapoints: true,
+				
+				"animation": {
+					//"duration": 1,
+					"onComplete": function () {
+						var chartInstance = this.chart,
+						ctx2 = chartInstance.ctx;
+
+						ctx2.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+						ctx2.textAlign = 'center';
+						ctx2.textBaseline = 'bottom';
+						ctx2.fillStyle = "#666";
+
+						this.data.datasets.forEach(function (dataset, i) {
+							var meta = chartInstance.controller.getDatasetMeta(i);
+							meta.data.forEach(function (bar, index) {
+								var data = dataset.data[index];                            
+								ctx2.fillText(data, bar._model.x, bar._model.y - 5);
+							});
+						});
+					}
+				},
+				
+				
+				scales: {
+				xAxes: [
+					{
+						categoryPercentage: 0.4,
+						barPercentage: 0.7,
+						gridLines: { 
+							display: false,
+							drawTicks: false,
+						}
+					}
+				],
+				yAxes: [{
+					ticks: {
+						beginAtZero: true,
+						//stepSize: 5,
+						//max: 100
+					},
+					gridLines: {
+						
+					}
+				}]
+				}
+            };
+
+            var ctx2 = document.getElementById("barChart").getContext("2d");
+			
+            new Chart(ctx2, { type: 'bar', data: barData, options: barOptions });
+
+//------------------------------------------------
+            var doughnutData = {
+                labels: ["Initiative", "Energetic", "Supportive","Honesty","Brave"],
+				
+				
+				
+                datasets: [{
+                    data: [300, 50, 100,150,200],
+                    backgroundColor: ["#a3e1d4", "#dedede", "#b5b8cf","#a561d4", "#12dede"]
+                }]
+            };
+            var doughnutOptions = {
+                responsive: true,
+				legend: {
+					position: 'left',
+					  labels: {
+      					boxWidth: 12,
+						boxHeight: 2
+    }
+  }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, { type: 'doughnut', data: doughnutData, options: doughnutOptions });
+			
+            //------------------------------------------------------------
+            var doughnutData2 = {
+                labels: ["Honesty", "Accuracy", "Dance"],
+                datasets: [{
+                    data: [300, 50, 100],
+                    backgroundColor: ["#a3e1d4", "#dedede", "#b5b8cf"]
+                }]
+            };
+            var doughnutOptions2 = {
+                responsive: true,
+				legend: {
+					position: 'left',
+					  labels: {
+      					boxWidth: 12,
+						boxHeight: 2
+    }
+  }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
+            new Chart(ctx4, { type: 'doughnut', data: doughnutData2, options: doughnutOptions2 });
+
+        });
+    </script>
+
+	   
+   </body>
+</html>
