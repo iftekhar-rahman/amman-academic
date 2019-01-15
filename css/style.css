@@ -8449,6 +8449,9 @@ input[type="password"], input[type="tel"], input[type="text"],  input[type="emai
 .form-right.fileup input[type="file"] {
   display: none;
 }
+.form-left-wrap.fuldwid.ra {
+  margin-bottom: 10px;
+}
 
 /* .radio input[type="radio"]:checked + label::after {
   content: '';
