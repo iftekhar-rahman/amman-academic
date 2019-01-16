@@ -8415,6 +8415,12 @@ input[type="password"], input[type="tel"], input[type="text"],  input[type="emai
 .form-area textarea{
   height: 110px;
 }
+textarea{
+  padding: 10px;
+}
+label span {
+  color: #D90D24;
+}
 .single-grade.radio {
   display: inline-block;
   margin-right: 70px;

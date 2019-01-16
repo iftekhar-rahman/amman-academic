@@ -1422,10 +1422,11 @@ form.list_form {
     margin-top: 20px;
 	color: #fff;
 }
-.buuton_div button{	
-	font-size: 14px;
-	border: none;
-	padding:7px 20px 7px 15px;
+.buuton_div button {
+    font-size: 14px;
+    border: none;
+    padding: 7px 20px 7px 15px;
+    margin-left: 5px;
 }
 .buuton_div button i{
 	margin-right:7px;

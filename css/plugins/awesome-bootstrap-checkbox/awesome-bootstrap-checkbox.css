@@ -145,13 +145,13 @@
   display: inline-block;
   position: absolute;
   content: " ";
-  width: 11px;
-  height: 11px;
-  left: 3px;
-  top: 3px;
+  width: 17px;
+  height: 17px;
+  left: 1px;
+  top: 0px;
   margin-left: -20px;
   border-radius: 50%;
-  background-color: #555555;
+  background-color: #D90C23;
   -webkit-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   -o-transform: scale(0, 0);
@@ -176,7 +176,7 @@
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-
+a:focus, input:focus, textarea:focus, button:focus, label:focus { outline: 0 solid }
 .radio input[type="radio"]:disabled + label {
   opacity: 0.65;
 }
