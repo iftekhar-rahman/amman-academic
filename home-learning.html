@@ -190,40 +190,56 @@
 											<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
 											<i class="fa fa-bell"></i>  <!--<span class="label label-warning">8</span>-->
 											</a>
-										<ul class="dropdown-menu dropdown-alerts">
+										<ul class="profile-noti dropdown-menu dropdown-alerts">
 											<li>
 												<a href="mailbox.html">
 													<div>
-														<i class="fa fa-envelope fa-fw"></i> You have 16 messages
-														<span class="pull-right text-muted small">4 minutes ago</span>
+														<div class="noti-icon">
+															<img src="img/n-2-2.png" alt="">
+														</div>
+														a new Home Learning of Math Subject has been submitted from Miss. Lina Karem
+														<span class="noti-date">06/01/2019 at  12:26 PM</span>
 													</div>
 												</a>
 											</li><!-- li ends -->
-											<li class="divider"></li>
+											<!-- #e5e5e5 -->
 											<li>
 												<a href="profile.html">
 													<div>
-														<i class="fa fa-twitter fa-fw"></i> 3 New Followers
-														<span class="pull-right text-muted small">12 minutes ago</span>
+														<div class="noti-icon">
+															<img src="img/n-4-4.png" alt=""> 
+														</div>
+														a new Behavior  in Math Subject has been submitted from Miss. Lina Karem
+														<span class="noti-date">05/01/2019 at  12:26 PM</span>
 													</div>
 												</a>
 											</li><!-- li ends -->
-											<li class="divider"></li>
 											<li>
 												<a href="grid_options.html">
 													<div>
-														<i class="fa fa-upload fa-fw"></i> Server Rebooted
-														<span class="pull-right text-muted small">4 minutes ago</span>
+														<div class="noti-icon">
+															<img src="img/n-5.png" alt=""> 
+														</div>
+														a new Negligence Behavior  in Math Subject has been submitted from Miss. Lina Karem
+														<span class="noti-date gray-noti">03/01/2019 at  12:26 PM</span>
 													</div>
 												</a>
 											</li><!-- li ends -->
-											<li class="divider"></li>
 											<li>
-												<div class="text-center link-block">
+												<a href="grid_options.html">
+													<div>
+														<div class="noti-icon">
+															<img src="img/n-7.png" alt=""> 
+														</div>
+														your College “Mohammad Zaid” has a Birthday tomorrow
+														<span class="noti-date gray-noti">01/01/2019 at  12:26 PM</span>
+													</div>
+												</a>
+											</li><!-- li ends -->
+											<li>
+												<div class="text-center link-block view-btn">
 													<a href="notifications.html">
-													<strong>See All Alerts</strong>
-													<i class="fa fa-angle-right"></i>
-													</a>
+													<strong><span><img src="img/n-6-7.png" alt=""></span> View All</strong></a>
 												</div>
 											</li><!-- li ends -->
 										</ul>
@@ -238,12 +254,10 @@
 									<b class="fa fa-angle-down"></b></span> 
 										</span> 
 										</a>
-										<ul class="dropdown-menu m-t-xs">
-											<li><a href="profile.html">Profile</a></li>
-											<li><a href="contacts.html">Contacts</a></li>
-											<li><a href="mailbox.html">Mailbox</a></li>
-											<li class="divider"></li>
-											<li><a href="login.html">Logout</a></li>
+										<ul class="dropdown-menu profile-log m-t-xs">
+											<li><a href="#"><span><img src="img/n-6-10.png" alt=""></span> Profile</a></li>
+											<li><a href="#"><span><img class="eye-icon" src="img/n-6-9.png" alt=""></span> View As</a></li>
+											<li><a href="#"><span><img src="img/n-6-8.png" alt=""></span> Sign out</a></li>
 										</ul>
 									</li>
 								</ul><!-- navbar ends -->
@@ -308,9 +322,27 @@
 										<div class="form-left">
 											<label>Published Date <span>*</span></label>
 										</div>
-										<div class="form-right">
-                                            <input class="datepic" data-provide="datepicker" class="date" placeholder="Select Date">
+										<div class="form-right ">
+											<div class="datepick">
+												<input id="d" class="datepic" data-provide="datepicker" class="date" placeholder="Select Date">
+												<label class="ds" for="d"><i class="fa fa-calendar"></i></label>
+											</div>
+
+											<!-- <div id="datepicker2">
+												<input class="form-control" type="text" name="">
+												<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+											</div> -->
+											<!-- <script>
+												$(function(){
+													$("#datepicker2").datepicker({
+														autoclose: true,
+														todayHighlight: true,
+													}).datepicker('update', new Date());
+												});
+											</script> -->
 										</div>
+
+										
 									</div><!-- form-left-wrap ends -->
 								</div><!-- col ends -->
 								<div class="col-lg-6">
@@ -406,16 +438,19 @@
 								<div class="col-lg-6">
 									<!-- form-left-wrap starts -->
 									<div class="form-right-wrap d-flex">
+										<div class="form-left">
+											<label>Attachments</label>
+										</div>
 										<div class="form-right fileup">
 											<input type="file" id="real-file" name="file_name" class="upload_file"/>
 											<button type="button" id="custom-button">Choose File</button>
-											<span class="custom-txt">No file chosen, yet.</span>
-											<label class="file_close" ><i class="fa fa-close"></i></label>
+											<span id="custom-txt">No file chosen, yet.</span>
+											<!-- <label class="file_close" ><i class="fa fa-close"></i></label> -->
 											
 											<script>
-												const realFileBtn = document.getElementById("real-file");
-												const customBtn = document.getElementById("custom-button");
-												const customTxt = document.getElementById("custom-txt");
+												var realFileBtn = document.getElementById("real-file");
+												var customBtn = document.getElementById("custom-button");
+												var customTxt = document.getElementById("custom-txt");
 
 												customBtn.addEventListener("click", function() {
 													realFileBtn.click();
@@ -428,6 +463,8 @@
 														customTxt.innerHTML = "No file chosen, yet.";
 													}
 												});
+
+											
 											</script>
 										</div>
 									</div><!-- form-left-wrap ends -->

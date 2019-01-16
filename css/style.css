@@ -127,7 +127,7 @@ h5 {
   margin-right: 0;
 }
 .navbar-top-links .dropdown-menu li a {
-  padding: 3px 20px;
+  padding: 5px 20px;
   min-height: 0;
 }
 .navbar-top-links .dropdown-menu li a div {
@@ -8366,13 +8366,19 @@ body.md-skin {
   }
 }
 
-
+/* =================================================
+                   new-css
+===================================================*/
 
 
 body {
   color: #000;
 }
-/* ==========.form-area================ */
+/* ==========.home-learning-area================ */
+ul.profile-noti.dropdown-menu {
+  top: 109%;
+  padding: 0;
+}
 .form-wrap {
     border: 1px solid #EDEDED;
     padding: 25px 20px;
@@ -8449,8 +8455,6 @@ label span {
   line-height: 20px;
   font-size: 12px;
   cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
 }
 .form-right.fileup input[type="file"] {
   display: none;
@@ -8458,18 +8462,61 @@ label span {
 .form-left-wrap.fuldwid.ra {
   margin-bottom: 10px;
 }
-
-/* .radio input[type="radio"]:checked + label::after {
-  content: '';
-  display: block;
+.form-left-wrap label, .form-right-wrap label {
+  margin-top: 5px;
+}
+.form-right.datepicker2 {
+  position: relative;
+}
+.form-right.datepicker2 span {
   position: absolute;
-  top: 6px;
-  left: 4px;
-  width: 6px;
-  height: 9px;
-  border: solid #d90c23;
-  border-width: 0 2px 2px 0;
-} */
+  right: 10px;
+  top: 7px;
+  color: #D90C23;
+}
+.datepick {
+  position: relative;
+}
+.datepick input, .datepick .ds {
+  cursor: pointer;
+}
+.datepick .ds {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  color: #D90C23;
+}
+#datepicker2{
+  width: 180px;
+  margin: 0 20px 20px 20px;
+}
+#datepicker2 > span:hover{
+  cursor: pointer;
+}
+
+/* ==================teacher-home-learning-list====================== */
+.home-col-140 {
+  width: 12.333333%;
+  margin-right: 7px;
+}
+.home-col-30 {
+  width: 35px;
+}
+.home-col-140 .datepick .ds{
+  top: 7px;
+}
+ul.home-col-row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.home-col-row li {
+  display: inline-block;
+}
+ul.home-col-row .home-col-200 {
+  float: right;
+}
+
 
 /* ==================teacher-schedule====================== */
 .schedule-area ul {
@@ -8479,11 +8526,14 @@ label span {
 }
 .schedule-area ul li {
   display: table-cell;
-  width: 14.53333%;
+  width: 15.04%;
   border-right: 1px solid #E1E1E1;
   height: 100%;
   text-align: center;
   vertical-align: middle !important;
+}
+.schedule-area ul li:first-child {
+  width: 12%;
 }
 .schedule-area {
   border: 1px solid #E1E1E1;
@@ -8508,6 +8558,43 @@ label span {
   vertical-align: middle;
   height: 100%;
 }
+.schedule-row.day-title, .schedule-row span {
+  color: #005581;
+}
+.schedule-row.day-title {
+  position: relative;
+}
+.schedule-row.day, .schedule-row.row-head {
+  color: #DD273B;
+}
+.schedule-row.day-title .session {
+  position: absolute;
+  right: 17px;
+  top: 11px;
+}
+.schedule-row.day-title .day {
+  left: 24px;
+  bottom: 13px;
+  position: absolute;
+}
+.schedule-row.day-title:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+}
+.schedule-row.day-title:after {
+  position: absolute;
+  left: -9px;
+  top: 33px;
+  width: 145px;
+  height: 1px;
+  background-color: #E1E1E1;
+  content: "";
+  transform: rotate(28deg);
+}
+
 
 
 
@@ -8538,16 +8625,28 @@ label span {
 
 /* ================teacher-profile-area===================== */
 .profile-noti.dropdown-menu li a {
-    padding: 3px 0;
-    font-size: 15px !important;
-    line-height: 22px;
+  padding: 7px 15px 7px 35px;
+  font-size: 15px !important;
+  line-height: 22px;
+}
+.profile-noti.dropdown-menu li a, .profile-log.dropdown-menu li a{
+  margin: 0;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
   background: none;
 }
 /* .nav .open > a, .nav .open > a:hover, .nav .open > a:focus */
-.profile-noti.dropdown-menu li a img{
-  margin-right: 5px;
+.profile-noti.dropdown-menu li, .profile-log.dropdown-menu li {
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+.profile-noti.dropdown-menu li:last-child, .profile-log.dropdown-menu li:last-child{
+  border-bottom: 0px solid;
+}
+.profile-noti.dropdown-menu li a .noti-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 .profile-noti.dropdown-menu li a .noti-date {
     color: #005581;
@@ -8559,7 +8658,9 @@ label span {
 }
 .link-block.view-btn a {
   color: #005581;
-  margin-left: 5px;
+}
+.link-block.view-btn a span {
+  margin-right: 7px;
 }
 .profile-noti.dropdown-menu {
   width: 330px;
@@ -8571,4 +8672,37 @@ ul.dropdown-menu.profile-log li a span {
   width: 30px;
   display: inline-block;
   text-align: center;
+}
+.navbar .dropdown-menu {
+  border-radius: 0 !important;
+}
+
+/* ===================.teacher-views========================= */
+.teacher-views-area {
+  margin-bottom: 20px;
+}
+ul.home-col-row.w190 li {
+  width: 18%;
+}
+.teacher-pic {
+  flex-basis: 35%;
+  margin-right: 15px;
+}
+.teacher-name {
+  flex-basis: 65%;
+}
+.teacher-pic img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+.teacher-name h3 {
+  font-size: 14px;
+  margin: 17px 0 0 0;
+}
+.teacher-name h3 span {
+  display: block;
+  margin-top: 10px;
+}
+.single-teacher-view {
+  margin-bottom: 22px;
 }
