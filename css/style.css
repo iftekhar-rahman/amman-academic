@@ -8621,6 +8621,46 @@ ul.home-col-row .home-col-200 {
   margin-bottom: 20px;
 }
 
+/* ===============.avatar-upload-css================== */
+.avatar-upload {
+  position: relative;
+}
+.avatar-edit {
+  position: absolute;
+  right: -125px;
+  z-index: 1;
+  top: 70px;
+  font-size: 13px;
+}
+.avatar-edit label {
+  color: #005581;
+}
+.avatar-edit label i.fa {
+  color: #DD263A;
+  margin-right: 3px;
+}
+.avatar-upload input {
+  display: none !important;
+}
+.avatar-upload input, .avatar-upload label {
+  display: inline-block;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: normal;
+}
+.avatar-preview {
+  width: 115px;
+  height: 115px;
+  position: relative;
+}
+.avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 
 /* ================teacher-profile-area===================== */

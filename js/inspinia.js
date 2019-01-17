@@ -177,6 +177,29 @@ $(document).ready(function () {
     $('.full-height-scroll').slimscroll({
         height: '100%'
     })
+
+    // avatar-upload
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                $('#imagePreview').hide();
+                $('#imagePreview').fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imageUpload").change(function() {
+        readURL(this);
+    });
+
+
+
+
+
+
+
 });
 
 
@@ -295,4 +318,21 @@ function WinMove() {
         .disableSelection();
 }
 
+
+
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-txt");
+
+customBtn.addEventListener("click", function() {
+    realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function(){
+    if(realFileBtn.value){
+        customTxt.innerHTML = realFileBtn.value;
+    } else{
+        customTxt.innerHTML = "No file chosen, yet.";
+    }
+});
 
