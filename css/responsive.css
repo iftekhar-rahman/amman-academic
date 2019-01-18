@@ -242,6 +242,26 @@
 	.chechkbox_ul2 li{
 		width: 50%;
 	}
+
+/* ===============.home-learning-list==================== */
+.home-col-140 {
+    width: 11.3%;
+}
+
+/* ===============.teacher-schedule==================== */
+.schedule-row {
+    height: 100px;
+}
+.schedule-row.day-title:after {
+    left: -20px;
+    top: 50px;
+    width: 130px;
+    transform: rotate(48deg);
+}
+.schedule-row.day-title .session {
+    right: 9px;
+}
+
 	
 }
 
@@ -312,7 +332,54 @@
 .list_table tbody{
 	font-size: 12px;
 }
+.form-right.fileup {
+    margin-bottom: 12px;
+}
+.form-left-wrap.fuldwid .form-left {
+    flex-basis: 25%;
+}
+.form-left-wrap.fuldwid .form-right, .form-right.fileup {
+    flex-basis: 75%;
+}
+.form-left-wrap.fuldwid.ra .form-left {
+    flex-basis: 0;
+}
+.form-left-wrap.fuldwid.ra .form-right {
+    flex-basis: 100%;
+}
+.form-left-wrap.fuldwid.ra .single-grade.radio {
+    margin: 0 6px;
+    text-align: center;
+}
+
+/* ===============.home-learning==================== */
+.form-left-wrap.fuldwid.ra .form-left {
+    flex-basis: 25%;
+}
+.form-left-wrap.fuldwid.ra .form-right {
+    flex-basis: 75%;
+}
+
+/* ===============.home-learning-list==================== */
+.home-col-140 {
+    width: 11%;
+}
 	
+.schedule-row {
+    height: 90px;
+}
+.schedule-row.day-title:after {
+    display: none;
+}
+.schedule-row.day-title span {
+    position: relative;
+    display: block;
+    top: 51px;
+    left: 0;
+}
+.schedule-row.day-title span.session {
+    top: 15px;
+}
 	
 	
 }
@@ -423,7 +490,21 @@ body.body-small.fixed-sidebar.mini-navbar #page-wrapper {
 }
 .login_box_div{
 	min-height:inherit;
-}		
+}
+
+
+/* ============.home-learning================ */
+.form-left-wrap.fuldwid.ra .form-left {
+    flex-basis: 25%;
+}
+.form-left-wrap.fuldwid.ra .form-right {
+    flex-basis: 75%;
+}
+
+
+.home-col-140 {
+    width: 29.6666666%;
+}
 	
 }
 
@@ -437,6 +518,17 @@ body.body-small.fixed-sidebar.mini-navbar #page-wrapper {
 .login_box_div button {
 	margin-top: 10px;
 }
+
+/* ===============.teacher-schedule======================== */
+.schedule-area ul li {
+    display: block;
+    width: 100% !important;
+}
+.schedule-row.day-title .day {
+    left: 0;
+    right: 0;
+}
+
 
 }
 
@@ -535,7 +627,31 @@ body.body-small.fixed-sidebar.mini-navbar #page-wrapper {
 	width: 90%;
 }	
 	
-	
+
+/* ========.home-learning=========== */
+.form-left {
+    flex-basis: 30%;
+}
+.form-right {
+    flex-basis: 70%;
+}
+.form-left-wrap.fuldwid .form-right {
+    flex-basis: 70% !important;
+}
+.form-left-wrap.fuldwid .form-left {
+    flex-basis: 30% !important;
+}
+.form-left-wrap.fuldwid.ra .form-left {
+    flex-basis: 0 !important;
+}
+.form-left-wrap.fuldwid.ra .form-right {
+    flex-basis: 100% !important;
+}
+
+/* ========.home-learning-list=========== */
+.home-col-140 {
+    width: 47%;
+}
 	
 	
 
@@ -549,4 +665,7 @@ body.body-small.fixed-sidebar.mini-navbar #page-wrapper {
 		#lapy_owl .owl-dots { 
     margin-top: 15px; 
 }
+
+
+
 }
